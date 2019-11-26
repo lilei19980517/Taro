@@ -1,0 +1,76 @@
+.share-block{
+  width: 750px;
+  min-height: 66px;
+  .share-block-title{
+    padding: 14px 0 18px 30px;
+    font-size:28px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:rgba(102,102,102,1);
+  }
+  .hidden{
+    display: none;
+  }
+  .share-table{
+    background-color: #fff;
+    .share-table-header{
+      width: 750px;
+      height: 72px;
+      background-color: #F8FAFD;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding:0 30px;
+      box-sizing: border-box;
+      .left{
+        min-width: 20px;
+        display: flex;
+        align-items: center;
+        .header-item{
+          min-width:20px;
+          height:36px;
+          font-size:26px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(153,153,153,1);
+          line-height:36px;
+        }
+      }
+      .right{
+        min-width: 406px;
+        height: 72px;
+        line-height: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-item{
+          min-width:20px;
+          height:36px;
+          font-size:26px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(153,153,153,1);
+          line-height:36px;
+          position: relative;
+          .arrow{
+            top:8px;
+            right:-28px;
+            width: 20px;
+            height: 36px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('./arrow.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .item-margin{
+        margin-right: 30px !important;
+      }
+    }
+  }
+}

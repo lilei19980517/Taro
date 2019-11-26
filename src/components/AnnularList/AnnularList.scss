@@ -1,0 +1,63 @@
+.annular-list-root{
+	display: flex;
+	flex-wrap: wrap;
+	// 上面标题盒子
+	.annular-list-root-title-box{
+		width: 100%;
+		height: 100px;
+		margin-bottom: -60px;
+		display: flex;
+		align-items: center;
+		// 标题
+		.annular-list-root-title-box-title{
+			font-size:30px;
+			font-family:PingFangSC;
+			font-weight:550;
+			color:rgba(51,51,51,1);
+			margin-left: 30px;
+		}
+		// 更多按钮盒子
+		.annular-list-root-title-box-more{
+			margin-left: auto;
+			margin-right: 26px;
+			display: flex;
+			align-items: center;
+			.annular-list-root-title-box-more-text{
+				font-size:24px;
+				font-family:PingFangSC;
+				font-weight:400;
+				color:rgba(153,153,153,1);
+			}
+			.annular-list-root-title-box-more-img{
+				width: 32px;
+				height: 32px;
+				transform: rotate(-90deg)
+			}
+		}
+	}
+	// 下面每一个图表盒子
+	.annular-list-root-every{
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-sizing: border-box;
+		margin-top: 60px;
+		.annular-list-root-every-chart{
+			display: inline-block;
+		}
+		// 如果不在h5的图片
+		.annular-list-root-every-img{
+			width: 234px;
+			height: 234px;
+		}
+		.annular-list-root-every-text{
+			margin-top: 30px;
+			font-size:30px;
+			font-family:PingFangSC;
+			font-weight:400;
+			color:rgba(51,51,51,1);
+			line-height:42px;
+		}
+	}
+}

@@ -1,0 +1,138 @@
+.lastest-upadate-item{
+  width: 750px;
+  height: 302px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  .main{
+    width: 684px;
+    margin: 0 32px;
+    border-bottom: 1px solid rgb(250, 245, 245);
+    display: flex;
+    justify-content: space-between;
+    .main-left{
+      display: flex;
+      flex-direction: column;
+      min-width:102px;
+      height: 214px;
+      .type{
+        margin-top:72px;
+        min-width:102px;
+        max-width: 168px;
+        height:48px;
+        font-size:34px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(0,119,228,1);
+        line-height:48px;
+      }
+      .red{
+        color:#E35857;
+      }
+      .date{
+        min-width:80px;
+        max-width: 168px;
+        height:36px;
+        font-size:26px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(153,153,153,1);
+        line-height:36px;
+      }
+    }
+    .main-right{
+      height: 214px;
+      display: flex;
+      flex-direction: column;
+      .item-title{
+        min-width: 100px;
+        max-width: 518px;
+        margin-top: 30px;
+        height:44px;
+        font-size:32px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:rgba(51,51,51,1);
+        line-height:44px;
+      }
+      .trade{
+        min-width:130px;
+        max-width: 518px;
+        margin-top: 8px;
+        height:36px;
+        font-size:26px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:rgba(51,51,51,1);
+        line-height:36px;
+      }
+      .company-info{
+        min-width: 100px;
+        margin-top:20px;
+        height: 44px;
+        line-height: 44px;
+        display: flex;
+        align-items: center;
+        .key{
+          min-width:96px;
+          height: 34px;
+          font-size:24px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(153,153,153,1);
+          line-height:34px;
+          margin-right: 6px;
+        }
+        .value{
+          min-width:68px;
+          height:44px;
+          font-size:32px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(0,119,228,1);
+          line-height:44px;
+          .unit{
+            font-size:24px;
+            &:first-of-type{
+              margin-right: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom{
+    min-width: 100px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    padding-left:32px;
+    box-sizing: border-box;
+    .shares{
+      min-width:88px;
+      height:34px;
+      margin-top:4px;
+      font-size:24px;
+      font-family:PingFangSC-Regular;
+      font-weight:400;
+      color:rgba(153,153,153,1);
+      line-height:34px;
+      margin-right: 20px;
+    }
+    .shares-item{
+      min-width:132px;
+      height:46px;
+      line-height: 46px;
+      background:rgba(241,245,253,1);
+      border-radius:4px;
+      margin-right: 12px;
+      font-size:26px;
+      font-family:PingFangSC-Medium;
+      font-weight:500;
+      color:rgba(65,124,213,1);
+      text-align: center;
+    }
+  }
+}

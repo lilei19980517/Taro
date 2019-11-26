@@ -1,0 +1,86 @@
+.screen-root{
+    position: relative;
+    .screen-root-default-box{
+        width: 100%;
+        height: 68px;
+        background-color: #f4f6f8;
+        border-bottom: 2px solid #eee;
+        display: flex;
+        align-items: center;
+        box-sizing:border-box;
+        padding: 0 36px;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 3;
+        .screen-root-default-box-title{
+            display: flex;
+            &:last-child{
+                flex-direction: row-reverse;
+            }
+            .screen-root-default-box-title-text{
+                font-size:26px;
+                font-family:PingFangSC;
+                font-weight:400;
+                color:rgba(128,128,128,1);
+            }
+            .screen-root-default-box-title-text-active{
+                color: #0077E4;
+            }
+            .screen-root-default-box-title-btn{
+                width: 30px;
+                height: 30px;
+                margin: 0 12px;
+            }
+        }
+    }
+    // 显示弹出层
+    .screen-root-option-box-show{
+        display: block !important;
+    }
+    .screen-root-option-box{
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        height: 1200px;
+        background-color: rgba(0,0,0,0.3);
+        overflow: hidden;
+        z-index: 2;
+        display: none;
+        .screen-root-option-box-scroll-show{
+            display: block !important;
+        }
+        .screen-root-option-box-scroll{
+            max-height: 886px;
+            width: 100%;
+            overflow: hidden;
+            background-color: #fff;
+            display: none;
+            .screen-root-option-box-scroll-every{
+                display: flex;
+                height: 88px;
+                justify-content: space-between;
+                box-sizing: border-box;
+                padding: 0 32px;
+                align-items: center;
+                .screen-root-option-box-scroll-every-text{
+                    font-size:28px;
+                    font-family:PingFangSC;
+                    font-weight:400;
+                    color:rgba(102,102,102,1);
+                }
+                .screen-root-option-box-scroll-every-text-active{
+                    color: #0077E4;  
+                }
+                .screen-root-option-box-scroll-every-yes{
+                    width: 44px;
+                    height: 44px;
+                    display: none;
+                }
+                .screen-root-option-box-scroll-every-text-active+
+                .screen-root-option-box-scroll-every-yes{
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.stock-list-root{
+	.stock-list-root-top{
+		background-color: #fff;
+		width: 100%;
+		height: 110px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 2px solid #efefef;
+		.stock-list-root-top-name{
+			display: flex;
+			flex-direction: column;
+			margin-left: 32px;
+			.stock-list-root-top-name-top{
+				font-size:32px;
+				font-family:PingFangSC;
+				font-weight:550;
+				color:rgba(51,51,51,1);
+			}
+			.stock-list-root-top-name-bottom{
+				display: flex;
+				align-items: center;
+				.stock-list-root-top-name-bottom-img{
+					width: 30px;
+					height: 23px;
+					border-radius: 2px;
+					overflow: hidden;
+				}
+				.stock-list-root-top-name-bottom-text{
+					font-size:24px;
+					font-family:PingFangSC;
+					font-weight:500;
+					color:rgba(153,153,153,1);
+					margin-left: 12px;
+				}
+			}
+		}
+		// 右边数据盒子
+		.stock-list-root-top-data{
+			display: flex;
+			justify-content: flex-end;
+			// 默认涨的样式
+			.stock-list-root-top-data-price{
+				font-size:32px;
+				font-family:Montserrat;
+				font-weight:550;
+				color:rgba(240,48,51,1);
+			}
+			.stock-list-root-top-data-up{
+				width:146px;
+				height:46px;
+				background: #E35857FF;
+				border-radius:4px;
+				text-align: center;
+				font-size:32px;
+				font-family:Montserrat;
+				font-weight:550;
+				color:rgba(255,255,255,1);
+				line-height:46px;
+				margin-left: 42px;
+				margin-right: 32px;
+				border-radius: 4px;
+			}
+			// 跌了的样式
+			.stock-list-root-top-data-price-green{
+				@extend .stock-list-root-top-data-price;
+				color: rgba(64,161,118,1);
+			}
+			.stock-list-root-top-data-down{
+				@extend .stock-list-root-top-data-up;
+				background-color: rgba(64,161,118,1);
+			}
+		}
+	}	
+	// 列表部分
+	.stock-list-root-list{
+		background-color: #fff;;
+		overflow: hidden;
+		.stock-list-root-list-every{
+			width: 100%;
+			height: 100px;
+			display: flex;
+			flex-direction: column;
+			box-sizing: border-box;
+			margin-top: 34px;
+			padding: 0 34px;
+			.stock-list-root-list-every-title{
+				font-size:30px;
+				font-family:PingFangSC;
+				font-weight:550;
+				color:rgba(51,51,51,1);
+			}
+			.stock-list-root-list-every-text{
+				font-size:24px;
+				font-family:PingFangSC;
+				font-weight:400;
+				color:rgba(153,153,153,1);
+				margin-top: 8px;
+			}
+		}
+	}
+}

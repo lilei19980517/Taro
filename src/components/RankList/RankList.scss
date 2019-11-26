@@ -1,0 +1,141 @@
+.rank-list-root{
+    width: 100%;
+    overflow: hidden;
+    background-color:#fff;
+    // 头部标题盒子样式
+    .rank-list-root-top-box{
+        height: 100px;
+        width: 696px;
+        margin-left: 32px;
+        display: flex;
+        justify-content: flex-end;
+        // 图表的标题
+        .rank-list-root-top-box-title{
+                font-family:PingFangSC-Medium;
+                min-width: 100px;
+                text-align: right;
+                font-size:26px;
+                font-weight:400;
+                color:rgba(102,102,102,1);
+                line-height:100px;
+            &:nth-of-type(1){
+                margin-right: auto;
+                font-size:30px;
+                font-family:PingFangSC;
+                font-weight:550;
+                color:rgba(51,51,51,1);
+            }
+        }
+        .rank-list-root-top-box-left{
+            font-size:30px;
+            font-family:PingFangSC-Medium;
+            font-weight:550;
+            color:rgba(51,51,51,1);
+            line-height: 100px;
+            margin-right: auto;
+            font-weight:550;
+        }
+        .rank-list-root-top-box-right{
+            font-family:PingFangSC-Medium;
+            min-width: 100px;
+            text-align: right;
+            margin-left: 58px;
+            font-size:26px;
+            font-weight:400;
+            color:rgba(102,102,102,1);
+            line-height:100px;
+        }
+        .rank-list-root-top-box-right-btn{
+            height: 32px;
+            width: 32px;
+            border: 2px dashed #ccc;
+            transform: rotate(270deg);
+            margin: auto 0;
+            margin-left: 2px;
+        }
+    }
+    // 图表样式
+    .rank-list-root-chart{
+        width: 100%;
+        height: 415px;
+        // 小程序端图片样式
+        .rank-list-root-chart-img{
+            display: block;
+            width: 340px;
+            height: 340px;
+            margin: auto;
+        }
+    }
+    // 中间列表
+    .rank-list-root-list{
+        // 每行
+        .rank-list-root-list-row{
+            position: relative;
+            @extend .rank-list-root-top-box;
+            height: 88px;
+            margin-top: 18px;
+            border-bottom: 2px solid #eee;
+            // 左边的数字
+            .rank-list-root-list-row-left-num{
+                width: 32px;
+                height: 32px;
+                border-radius: 4px;
+                background-color: #BFBFBF;
+                font-size:24px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                color:rgba(255,255,255,1);
+                text-align: center;
+                margin-right: 10px;
+            }
+            // 左边标题
+            .rank-list-root-list-row-left-title{
+                margin-right: auto;
+                font-size:28px;
+                font-family:PingFangSC-Medium;
+                font-weight:550;
+                color:#333333;
+                line-height: 28px;
+            }
+            // 没有下面线条的情况下设置的类名，设置行高居中
+            .rank-list-root-list-row-left-title-line-height{
+                margin-top: 34px;
+            }
+            .rank-list-root-list-row-right{
+                font-family:PingFangSC-Medium;
+                min-width: 100px;
+                text-align: right;
+                margin-left: 58px;
+                font-size:26px;
+                font-weight:400;
+                color:rgba(153,153,153,1);
+                line-height: 88px;
+            }
+            // 下划线
+            .rank-list-root-list-row-line{
+                width: 100px;
+                height: 12px;
+                border-radius: 6px;
+                background-color: #E35857;
+                position: absolute;
+                bottom: 22px;
+                left: 40px;
+            }
+            &:nth-child(1) .rank-list-root-list-row-line{
+                width: 370px;      
+            }
+            &:nth-child(2) .rank-list-root-list-row-line{
+                width: 326px;      
+            }
+            &:nth-child(3) .rank-list-root-list-row-line{
+                width: 308px;      
+            }
+            &:nth-child(4) .rank-list-root-list-row-line{
+                width: 240px;      
+            }
+            &:nth-child(5) .rank-list-root-list-row-line{
+                width: 160px;      
+            }
+        }
+    }
+}

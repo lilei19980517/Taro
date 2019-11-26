@@ -1,0 +1,91 @@
+.no-border{
+  border-bottom: 0 !important;
+}
+.information{
+  width: 684px;
+  max-height: 252px;
+  padding: 24px 0 30px 0;
+  margin: 0 34px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(238,238,238,1);
+  background-color: #fff;
+  .left{
+    width: 476px;
+    display: flex;
+    flex-direction: column;
+    .info-title{
+      width: 100%;
+      min-height: 44px;
+      font-size:32px;
+      font-weight:800;
+      color:rgba(51,51,51,1);
+      line-height:44px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2; //行数
+      -webkit-box-orient: vertical;
+      text-align: left;
+      margin-bottom: 18px;
+    }
+    .info-tags{
+      display: flex;
+      margin-bottom: 30px;
+      .tag1{
+        min-width: 100px;
+        height: 44px;
+        line-height: 44px;
+        margin-right: 10px;
+        background:rgba(246,248,250,1);
+        border-radius:4px;
+        padding-left:8px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        .tag-type{
+          font-size:24px;
+          font-weight:500;
+          color:rgba(51,51,51,1);
+          margin-right: 4px;
+        }
+        .grow{
+          font-size:22px;
+          font-weight:500;
+          color:rgba(227,88,87,1);
+          margin-right: 10px;
+        }
+        .low{
+          font-size:22px;
+          font-weight:500;
+          color:rgba(64,161,118,1);
+          margin-right: 10px;
+        }
+      }
+    }
+    .info-type{
+      height: 32px;
+      font-size:24px;
+      font-weight:400;
+      color:rgba(155,155,155,1);
+      line-height: 32px;
+      .type-item{
+        margin-right: 14px;
+      }
+    }
+  }
+  .only-left{
+    width: 682px;
+    .info-title{
+      margin-bottom: 16px;
+    }
+    .info-tags{
+      margin-bottom: 28px;
+    }
+  }
+  .right{
+    width: 188px;
+    height: 188px;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,334 @@
+// 清楚默认
+.picture-root{
+    width:100%;
+    background:rgba(17,26,83,1);
+    overflow: hidden;
+     // 公共标题盒子
+     .picture-root-title{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        padding-left: 76px;
+        align-items: center;
+        // 科创板亮点的标题
+        &:nth-of-type(2){
+            margin-top: 65px;
+            margin-bottom: -10px;
+        }
+        // 科创板细则
+        &:nth-of-type(3){
+           display: none;
+        }
+        // 左边图片
+        .picture-root-title-left{
+            width: 190px;
+            height: 8px;
+        }
+        // 右边图片
+        .picture-root-title-right{
+            @extend .picture-root-title-left;
+        }
+        // 中间文字
+        .picture-root-title-text{
+            width:180px;
+            height:50px;
+            font-size:36px;
+            font-family:PingFangSC-Medium;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            line-height:50px;
+            margin-right: 16px;
+            margin-left: 20px;
+        }
+    }
+    // 第一个板块
+    .picture-root-one{
+        width: 100%;
+        height: 878px;
+        display: block;
+        position: relative;
+        .picture-root-title{
+            position: absolute;
+            top: 520px;
+        }
+        // 下面内容
+        .picture-root-one-text{
+            width:604px;
+            height:198px;
+            position: absolute;
+            top: 628px;
+            left: 50%;
+            margin-left: -302px;
+            font-size:28px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(146,197,255,1);
+            line-height:48px;
+        }
+    }
+    // 第二板块
+    .picture-root-two{
+        margin-top: 84px;
+        width: 100%;
+        height: 2066px;
+        background: #0e1648;
+        position: relative;
+        // 背景
+        .picture-root-two-bg{
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 0;
+        }
+        // 中间竖线
+        .picture-root-two-mid-line{
+            width:2px;
+            height:1790px;
+            position: relative;
+            top: 178px;
+            left: 378px;
+            background-image: linear-gradient(#3D6BC5,#111A53);
+            // 六个圆点
+            .picture-root-two-mid-dot-one,
+            .picture-root-two-mid-dot-two,
+            .picture-root-two-mid-dot-three,
+            .picture-root-two-mid-dot-four,
+            .picture-root-two-mid-dot-five,
+            .picture-root-two-mid-dot-six,
+            .picture-root-two-mid-dot-seven{
+                position: absolute;
+                width: 34px;
+                height: 34px;
+                margin-left: -15px;
+            }
+            // 开始分别设置留个圆点各自的定位
+            .picture-root-two-mid-dot-one{
+                top: -40px;                
+            }
+            .picture-root-two-mid-dot-two{
+                top: 314px;
+            }
+            .picture-root-two-mid-dot-three{
+                top: 552px;
+            }
+            .picture-root-two-mid-dot-four{
+                top: 744px;
+            }
+            .picture-root-two-mid-dot-five{
+                top: 974px;
+            }
+            .picture-root-two-mid-dot-six{
+                top: 1172px;
+            }
+            .picture-root-two-mid-dot-seven{
+                top: 1492px;
+            }
+            // 开始文字介绍部分样式
+            .picture-root-two-mid-content{
+                width: 314px;
+                position: absolute;
+                .picture-root-two-mid-content-date{
+                    display: block;
+                    font-size: 24px;
+                    font-family: PingFangSC-Regular;
+                    font-weight: 400;
+                    color: rgba(110,185,255,1);
+                    line-height: 34px;
+                }
+                .picture-root-two-mid-content-title{
+                    margin: 0;
+                    display: block;
+                    font-size: 32px;
+                    font-family: PingFangSC-Medium;
+                    font-weight: 500;
+                    color: rgba(100,159,244,1);
+                    line-height: 44px;
+                }
+                .picture-root-two-mid-content-text{
+                    display: block;
+                    width: 314px;
+                    height: 280px;
+                    font-size: 24px;
+                    font-family: PingFangSC-Regular;
+                    font-weight: 400;
+                    color: rgba(255,255,255,1);
+                    line-height: 40px;
+                }
+                // 选定为偶数的也就是在左边的
+                &:nth-child(2n){
+                    left: -345px;
+                    // 字体靠右
+                    .picture-root-two-mid-content-date,
+                    .picture-root-two-mid-content-title{
+                        text-align: right;
+                    }
+                }
+                // 选定为奇数的也就是在右边的
+                &:nth-child(2n-1){
+                    left: 32px;
+                    // 字体也是不一样的
+                    .picture-root-two-mid-content-title{
+                        font-size: 28px;
+                    }
+                }
+                // 开始分别设置垂直位置
+                &:nth-child(8){
+                    top: -40px;  
+                }
+                &:nth-child(9){
+                    top: 314px;  
+                }
+                &:nth-child(10){
+                    top: 552px;  
+                }
+                &:nth-child(11){
+                    top: 744px;  
+                }
+                &:nth-child(12){
+                    top: 974px;  
+                }
+                &:nth-child(13){
+                    top: 1172px;  
+                }
+                &:nth-child(14){
+                    top: 1492px;  
+                }
+            }          
+        }
+    }
+    .picture-root-bright-spot{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 40px;
+        .picture-root-bright-spot-box{
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            width: 314px;
+            height: 434px;
+            margin-top: 114px;
+            .picture-root-bright-spot-box-img{
+                display: block;
+                width: 212px;
+                height: 212px;
+                margin: 0 auto;
+            }
+            .picture-root-bright-spot-box-title{
+                display: block;
+                font-size:32px;
+                font-family:PingFangSC-Medium;
+                font-weight:500;
+                color:rgba(110,239,255,1);
+                line-height:44px;
+                text-align: center;
+                margin: {
+                    top: 40px;
+                    bottom: 18px;
+                }
+            }
+            .picture-root-bright-spot-box-text{
+                display: block;
+                width:314px;
+                height:200px;
+                font-size:24px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                color:rgba(238,246,255,1);
+                line-height:40px;
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            // 偶数也就是右边的演示
+            &:nth-of-type(2n){
+                margin-top: 0;
+                margin-top: 114px;
+            }
+        }
+
+    }
+    .picture-root-triangle-title{
+        width: 100%;
+        text-align: center;
+        margin-top: 64px;
+        margin-bottom: 14px;
+        .picture-root-triangle-title-box{
+            display: inline-block;
+            height: 50px;
+            .picture-root-triangle-title-left{
+                width: 22px;
+                height: 22px;
+                margin-right: 8px;
+            }
+            .picture-root-triangle-title-right{
+                width: 22px;
+                height: 22px;
+                margin-left: 8px;
+                transform: rotate(180deg)
+            }
+            .picture-root-triangle-text{
+                height:50px;
+                font-size:36px;
+                font-family:PingFangSC-Medium;
+                font-weight:500;
+                color:rgba(110,239,255,1);
+                line-height:50px;
+            }
+        }
+    }
+    // 不规则图形，里面放文字
+    .picture-root-irregular-figure{
+        display: block;
+        width: 672px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .picture-root-irregular-figure-top{
+            width: 100%;
+            height: 50px;
+        }
+        .picture-root-irregular-figure-mid{
+           height: 176px;
+           width: 100%;
+
+        }
+        .picture-root-irregular-figure-mid-three{
+            height: 300px;
+        }
+            .picture-root-irregular-figure-mid-text{
+                display: block;
+                position: absolute;
+                width: 572px;
+                top: 50px;
+                left: 50%;
+                // padding-right: 20px;
+                margin-left: -287px;
+                font-size:24px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                color:rgba(238,246,255,1);
+                line-height:44px;
+                .picture-root-irregular-figure-mid-text-blod{
+                    font-weight: blod;
+                    color: #f5a623;
+                    font-size: 28px;
+                }
+            }
+        .picture-root-irregular-figure-bottom{
+            height: 60px;
+            width: 100%;
+        }
+    }
+    .picture-root-footer{
+        margin-top: 116px;
+        width:750px;
+        height:184px;
+        line-height: 184px;
+        background:rgba(19,18,42,1);
+    }
+}

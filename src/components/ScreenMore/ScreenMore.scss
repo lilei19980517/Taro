@@ -1,0 +1,124 @@
+.screen-more-root{
+	overflow: hidden;
+	background-color: #f4f6f8;
+	.screen-more-root-box{
+		margin-bottom: 126px;
+		width: 100%;
+		.screen-more-root-box-list{
+			margin-top: 18px;
+			background-color: #fff;
+			overflow: hidden;
+			padding: {
+				left: 32px;
+				right: 36px;
+			}
+			// 标题
+			.screen-more-root-box-list-title{
+				height:44px;
+				font-size:32px;
+				font-family:PingFangSC;
+				font-weight:550;
+				color:rgba(51,51,51,1);
+				line-height:44px;
+				margin-top: 26px;
+			}
+			// 下面内容盒子
+			.screen-more-root-box-list-box{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding: {
+					top: 12px;
+					bottom:	56px;
+				}
+				// 每一个内容
+				.screen-more-root-box-list-box-every{
+					border-radius: 8px;
+					height: 60px;
+					width: 210px;
+					background-color: #F3F6F9;
+					display: flex;
+					align-items: center;
+					box-sizing: border-box;
+					padding: 0 20px;
+					margin-top: 30px;
+					justify-content: center;
+					// 数字
+					.screen-more-root-box-list-box-every-num{
+						height:32px;
+						font-size:26px;
+						font-family:PingFangSC;
+						font-weight:400;
+						color:rgba(51,51,51,1);
+					}
+					// 文字
+					.screen-more-root-box-list-box-every-text{
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						@extend .screen-more-root-box-list-box-every-num;
+						margin-right: 15px;
+					}
+				}
+				// 每一个选中的样式
+				.screen-more-root-box-list-box-every-select{
+					background-color: rgba(250,0,0,0.5);
+				}
+				.screen-more-root-box-list-box-every-last{
+					@extend .screen-more-root-box-list-box-every;
+					border-radius: 8px;
+					background-color: #fff;
+					border: 2px solid #ccc;
+					// 这里就文字框，不需要margin撑开间隔
+					.screen-more-root-box-list-box-every-text{
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	// 底部按钮
+	.screen-more-root-footer{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background-color: #fff;
+		height: 100px;
+		border-top: 2px solid #e4e4e4;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		justify-content: space-between;
+		.screen-more-root-footer-reset{
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+			margin-left: 46px;
+			.screen-more-root-footer-reset-img{
+				width: 46px;
+				height: 46px;
+			}
+			.screen-more-root-footer-reset-text{
+				font-size:22px;
+				font-family:PingFangSC;
+				font-weight:400;
+				color:rgba(102,102,102,1);
+			}
+		}
+		.screen-more-root-footer-ok{
+			margin-right: 34px;
+			width:584px;
+			height:88px;
+			background:rgba(0,119,228,1);
+			border-radius:8px;
+			text-align: center;
+			font-size:32px;
+			font-family:PingFangSC;
+			font-weight:400;
+			color:rgba(255,255,255,1);
+			line-height:88px;
+		}
+	}
+}
